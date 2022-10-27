@@ -9,7 +9,6 @@ export const PokemonApp = () => {
   const { isLoading, pokemons } = useSelector((state) => state.pokemons);
 
   useEffect(() => {
-    console.log("ejecutar");
     dispatch(getPokemons(numberPage));
   }, [numberPage]);
 
